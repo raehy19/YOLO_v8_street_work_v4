@@ -5,7 +5,7 @@ if __name__ == "__main__":
     model = YOLO("yolov8n.yaml")  # build a new model from scratch
 
     # Train the model
-    train_results = model.train(data="data.yaml", epochs=10)
+    train_results = model.train(data="data.yaml", epochs=100)
 
     # Validate the model
     val_results = model.val()  # no arguments needed, dataset and settings remembered
